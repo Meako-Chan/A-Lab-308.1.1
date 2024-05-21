@@ -8,12 +8,14 @@ const n4 = 26;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
+// console.log(`The four numbers add up to 50: ${isSum50}`);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
+// console.log(`At least two numbers are odd: ${isTwoOdd}`);
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
@@ -26,12 +28,13 @@ const twentyFiveCheck = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
 // ways of handling it with other data structures
 // that we will review later.
 const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
+// console.log(`All numbers are unique: ${isUnique}`);
 
 // Check five: Check if all numbers are divisible by 5
 const divisible_5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) == 0;
 // console.log(`The four numbers are divisible by 5: ${divisible_5}`);
 
-// Check six: Check if first number is larger thatn the last
+// Check six: Check if first number is larger than the last
 const is_first_larger = (n1 > n4);
 // console.log(`The 1st number is larger than the last: ${is_first_larger}`)
 
