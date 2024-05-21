@@ -1,8 +1,8 @@
 // The initial numbers that must be verified.
-const n1 = 4;
-const n2 = 3;
-const n3 = 3;
-const n4 = 26;
+const n1 = 5;
+const n2 = 10;
+const n3 = 15;
+const n4 = 20;
 
 // Check one: add up to 50
 // This is a fairly simple operation using
