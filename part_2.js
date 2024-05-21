@@ -27,6 +27,7 @@ console.log(`When traveling at 60 miles per hour you will need ${budget_needed2}
 let budget_needed3 = gallons_needed3 * fuel_cost;
 console.log(`When traveling at 55 miles per hour you will need ${budget_needed3} in your budget.`);
 
+
 //Check 3: How long will the trip take, in hours?
 let time1 = distance / 75;
 console.log(`When traveling at an average of 75 miles per hour, the trip will take ${time1} hours.`);
@@ -37,3 +38,18 @@ console.log(`When traveling at an average of 60 miles per hour, the trip will ta
 let time3 = distance / 55;
 console.log(`When travelling at an average of 55 miles per hour, the trip will take ${time3} hours.`);
 
+//Part 3 Check 2 Done with switch statement
+switch(true){
+    case(budget > budget_needed1):
+        console.log(`The fastest speed you are able to travel at is 75 miles per hour. This will take ${time1} hours.`);
+        break;
+    case(budget > budget_needed2):
+        console.log(`The fastest speed you are able to travel at is 60 miles per hour. This will take ${time2} hours.`);
+        break;
+
+    case(budget > budget_needed3):
+        console.log(`The fastest speed you are able to travel at is 55 miles per hour. This will take ${time3} hours.`);
+        break;
+    default:
+        console.log("It seems you don't have enough money for the entire trip. Sadge.");
+}
