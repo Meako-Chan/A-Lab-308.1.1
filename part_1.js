@@ -26,6 +26,10 @@ const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 // that we will review later.
 const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
 
+// Check five: Check if all numbers are divisible by 5
+const divisible_5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) == 0;
+console.log(`The four numbers are divisible by 5: ${divisible_5}`);
+
 // Here, we put the results into a single variable 
 // for convenience. Note how we negate isOver25 using
 // the ! operator. We could also have tested for 
@@ -33,7 +37,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+console.log(`The four numbers are valid according to all criteria: ${isValid}`);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
