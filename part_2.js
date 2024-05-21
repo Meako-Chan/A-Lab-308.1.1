@@ -53,3 +53,6 @@ switch(true){
     default:
         console.log("It seems you don't have enough money for the entire trip. Sadge.");
 }
+//In the case given, it makes the most sense if you make the trip at 60
+//miles an hour on average. You do not have enough budget to go at 75 
+//miles an hour, but you want to get to your destination as fast as possible.
